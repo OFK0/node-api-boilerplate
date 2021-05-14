@@ -1,25 +1,25 @@
 const register = (req, res) => {
-    res.send('register');
+    res.send('register')
 }
 
 const login = (req, res) => {
-    res.send('login');
+    res.send('login')
 }
 
 const sendVerificationEmail = (req, res) => {
-    res.send('sendVerificationEmail');
+    res.send('sendVerificationEmail')
 }
 
 const emailVerification = (req, res) => {
-    res.send('emailVerification');
+    res.send('emailVerification')
 }
 
 const refreshTokens = (req, res) => {
-    res.send('refreshTokens');
+    res.send('refreshTokens')
 }
 
 const forgotPassword = (req, res) => {
-    res.send('forgotPassword');
+    res.send('forgotPassword')
 }
 
 module.exports = {
@@ -28,5 +28,5 @@ module.exports = {
     sendVerificationEmail,
     emailVerification,
     refreshTokens,
-    forgotPassword
+    forgotPassword,
 }

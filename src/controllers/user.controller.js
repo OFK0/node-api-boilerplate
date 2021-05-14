@@ -1,19 +1,23 @@
-const userModel = require('../database/models').User;
+const apiError = require('../helpers/error')
+
+const userModel = require('../database/models').User
 
 const all = (req, res) => {
-    userModel.findAll()
+    userModel
+        .findAll()
         .then((data) => {
-            res.status(200).json(data);
+            res.status(200).json(data)
         })
-        .catch((err) => {
-            res.status(500).json({
-                error: true,
-                message: 'An error occured',
-                stack: err
-            })
-        });
+        .catch(() =>
+            res.send(
+                new apiError({
+                    error: true,
+                    code: 500,
+                })
+            )
+        )
 }
 
 module.exports = {
-    all
+    all,
 }

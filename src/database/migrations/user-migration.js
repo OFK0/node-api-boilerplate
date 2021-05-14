@@ -1,4 +1,4 @@
-const TABLE_NAME = 'users';
+const TABLE_NAME = 'users'
 
 module.exports = {
     up: (queryInterface, Sequelize) => {
@@ -7,7 +7,7 @@ module.exports = {
                 allowNull: false,
                 primaryKey: true,
                 autoIncrement: true,
-                type: Sequelize.INTEGER
+                type: Sequelize.INTEGER,
             },
             firstname: {
                 allowNull: false,
@@ -31,13 +31,13 @@ module.exports = {
             },
             created_at: {
                 allowNull: false,
-                type: Sequelize.DATE
+                type: Sequelize.DATE,
             },
             updated_at: {
                 allowNull: false,
-                type: Sequelize.DATE
+                type: Sequelize.DATE,
             },
         })
     },
-    down: (queryInterface) => queryInterface.dropTable(TABLE_NAME)
+    down: (queryInterface) => queryInterface.dropTable(TABLE_NAME),
 }
