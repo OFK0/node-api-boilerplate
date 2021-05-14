@@ -1,0 +1,38 @@
+{
+  "name": "rest-api-boilerplate",
+  "version": "1.0.0",
+  "description": "simple rest api boilerplate",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ./src/app.js",
+    "start-dev": "nodemon ./src/app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "boilerplate",
+    "rest",
+    "api",
+    "expressjs",
+    "nodejs"
+  ],
+  "author": "Ömer Faruk Küçük",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^9.0.2",
+    "express": "^4.17.1",
+    "helmet": "^4.6.0",
+    "http-status": "^1.5.0",
+    "lodash": "^4.17.21",
+    "mysql2": "^2.2.5",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-jwt": "^4.0.0",
+    "sequelize": "^6.6.2",
+    "sequelize-cli": "^6.2.0",
+    "xss-clean": "^0.1.1"
+  },
+  "devDependencies": {
+    "eslint": "^7.26.0"
+  }
+}
